@@ -1,0 +1,30 @@
+@media (max-width: 1023px) {
+  /* Reponsive Font-size */
+  #navbar-section .navbar .container .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+
+  /* Hide avatar and heading */
+  #navbar-section .navbar .container .navbar-nav .nav-item-head {
+    display: none;
+  }
+
+  /* Information of Jobs */
+  /* Grid for 02 columns and 03 rows */
+  .job-details {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .container-certificate {
+    font-size: 12px;
+  }
+
+  .certificate-grid-col {
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+  /* Show nav-mb */
+  .nav-mb {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* Hide nav-pc */
+  .nav-pc {
+    display: none;
+  }
+
+  /* Grid(one column and 2rows) for Mobile*/
+  .about-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  /* Reponsive Font-size */
+  #navbar-section .navbar .container .navbar-nav .nav-item .nav-link {
+    font-size: 8px;
+  }
+
+  /* Hide avatar and heading */
+  #navbar-section .navbar .container .navbar-nav .nav-item-head {
+    display: none;
+  }
+
+  /* Information of Jobs */
+  /* Grid for 01 columns and 06 rows */
+  .job-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Certificate */
+  /* Grid 01 column and 03 rows */
+
+  .certificate-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .container-certificate {
+    font-size: 10px;
+  }
+
+  /* Border */
+  .cert-border-java {
+    border-left: none;
+  }
+
+  .cert-border-java,
+  .cert-border-web,
+  .cert-border-data {
+    border-bottom: 0.1vw solid #d6c08d;
+  }
+
+  /* Projects */
+  /* Grid for container-project-col */
+  .container-project-col {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+    padding: 30px;
+  }
+}

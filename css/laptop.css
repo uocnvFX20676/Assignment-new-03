@@ -1,0 +1,502 @@
+/* Margin and padding default for all */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Align Center and set color for Body part*/
+body {
+  background-color: #fff;
+  padding: 4vh 10vw;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+/* Set background-color for section part  */
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* Set Attribute for Banner */
+#banner {
+  width: 100%;
+  position: relative;
+  text-align: center;
+
+  margin-top: 30px;
+}
+
+/* Set Attribute for img */
+.container .img-container .banner-img {
+  width: 100%;
+  filter: brightness(50%);
+  /* margin-bottom: 8px; */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.24);
+}
+
+/* Set Attribute for banner-head */
+.container .banner-head {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  color: #ffffff;
+}
+
+/* Reponsive for h1 and p */
+.container h1 {
+  font-size: 4vw;
+}
+
+.container p {
+  font-size: 2vw;
+}
+
+/* For laptop-pc */
+.nav-mb {
+  display: none;
+}
+
+/* Navbar */
+/* Reponsive Font-size */
+#navbar-section .navbar .container .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+}
+
+/* Text center for nav-section */
+#navbar-section {
+  text-align: center;
+}
+
+/* Move Navbar to stand before img of Header  */
+
+#navbar-section .navbar {
+  width: 100%;
+  transform: translate(0%, -10%);
+
+  height: 60px;
+}
+
+#navbar-section .navbar .container {
+  width: 100%;
+  transform: translate(0%, 0%);
+}
+
+/* change the color and remove the underline */
+#navbar-section .navbar .container .navbar-nav .nav-item a {
+  color: #199cdb;
+  text-decoration: none;
+}
+
+/* Border Nav */
+#navbar-section .navbar .container .navbar-nav .nav-item {
+  width: 14vw;
+  padding: auto;
+  border-top: 0.1vh solid rgb(207, 207, 207);
+  border-bottom: 0.1vh solid rgb(207, 207, 207);
+  border-right: 0.1vw solid rgb(207, 207, 207);
+  border-left: 0.1vw solid rgb(207, 207, 207);
+  background-color: white;
+
+  list-style-type: none;
+
+  margin: auto;
+}
+
+/* Attribute for Avatar */
+#navbar-section .navbar .container .navbar-nav .nav-item img {
+  width: 12vw;
+  height: auto;
+
+  border-radius: 50%;
+
+  padding: 12px;
+}
+
+/* Border Outline */
+#navbar-section .navbar .container .navbar-nav .nav-item-head {
+  width: 12vw;
+  height: auto;
+
+  border-radius: 50%;
+  border: 1px;
+
+  margin: 60px;
+  border: 0.1px solid #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.24);
+}
+
+/* Information of Personal */
+/* Grid (02 column for Laptop and Tablet) */
+.about-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 0.1vh solid rgb(207, 207, 207);
+  border-bottom: 0.1vh solid rgb(207, 207, 207);
+  border-right: 0.1vw solid rgb(207, 207, 207);
+  border-left: 0.1vw solid rgb(207, 207, 207);
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.24);
+
+  margin-bottom: 60px;
+  margin-top: 90px;
+}
+
+/* Attribute for 02 columns */
+.personal {
+  line-height: 1.9;
+  padding: 20px;
+}
+
+/* Attribute for h1 */
+.personal h1 {
+  font-size: 30px;
+  margin: 30px;
+}
+
+/* Attribute for p1, li */
+.personal p,
+.personal li {
+  font-size: 14px;
+  color: rgb(95, 95, 95);
+  margin-left: 30px;
+}
+
+/* Background color for column 1 */
+.target {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Background color for column 2 */
+.personal-info {
+  background-color: rgb(233, 233, 233);
+}
+
+/* Information of Jobs */
+/* Grid for 03 columns and 2 rows for Laptop */
+.job-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 20px;
+  margin: auto;
+}
+
+/* Make Details are 1/10 và 9/10 */
+.detail {
+  display: grid;
+  grid-template-rows: 0.1fr 0.9fr;
+
+  border-top: 0.1vh solid rgb(207, 207, 207);
+  border-bottom: 0.1vh solid rgb(207, 207, 207);
+  border-right: 0.1vw solid rgb(207, 207, 207);
+  border-left: 0.1vw solid rgb(207, 207, 207);
+
+  padding: 20px;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.24);
+}
+/* Make detail-info row become  2 columns are 70% and 30% */
+.detail-infor {
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  justify-items: left;
+  align-content: left;
+
+  padding: 10px;
+
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 0.1vh solid rgb(192, 192, 192);
+}
+
+/*  Inline-block for language and skill  */
+.language,
+.skill {
+  display: inline-block;
+}
+
+/* Background color for language and skill */
+.skill-background,
+.language-background {
+  background-color: #199cdb;
+}
+
+/*  font-size for detail-infor i  */
+.detail-infor i {
+  font-size: 40px;
+}
+
+/* Color for detail-infor-1 */
+.detail-infor-1 {
+  margin-top: 30px;
+  color: rgb(95, 95, 95);
+}
+
+/* Inline block for "time" tag */
+.box {
+  display: inline-block;
+  background-color: #199cdb;
+  color: white;
+  border-radius: 8px;
+
+  padding: 2px 4px;
+}
+
+/* Symble for before line  */
+.dot {
+  height: 14px;
+  width: 14px;
+  background-color: #199cdb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Italic Font */
+.time {
+  font-style: italic;
+}
+
+/* line-height*/
+dt {
+  line-height: 1.5;
+}
+
+/* line and left */
+dd {
+  line-height: 1;
+  padding-left: 20px;
+}
+
+/* Level line for Skill */
+.line {
+  display: inline-block;
+  margin-top: 14px;
+  width: 60px;
+  height: 2px;
+  background-color: #199cdb;
+  margin-bottom: 20px;
+}
+
+/* Flex for Hobby */
+.detail-infor-hobby {
+  display: flex;
+  gap: 20px;
+}
+
+/* Attribute for Icon */
+.hobby {
+  margin: 6px;
+  padding: 12px;
+  font-size: 12px;
+
+  /* display: inline-block; */
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+}
+
+/* Attribute for Hobby */
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  width: 12px;
+  color: #199cdb;
+}
+
+/* Attribute of P for Hobby */
+.detail-infor-1 p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Certificate*/
+.container-certificate {
+  font-size: 16px;
+  width: 100%;
+  margin: 40px auto;
+
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.24);
+}
+
+/* Attribute for h1 */
+.container-certificate h1 {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+/* Grid for 02 columns and 02 rows for Laptop and tablet */
+.certificate-grid {
+  padding: 10px;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* 01 colum becomes 02 columns */
+.certificate-grid-col {
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Attribute of Img */
+.certificate-img {
+  padding: 10px;
+  width: 20vw;
+}
+
+.certificate-dl {
+  padding: 10px;
+}
+
+/* Border */
+.cert-border-java {
+  border-left: 0.1vw solid #d6c08d;
+}
+
+.cert-border-java,
+.cert-border-web {
+  border-bottom: 0.1vw solid #d6c08d;
+}
+
+/* Project */
+.container-project {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.12);
+
+  margin-bottom: 60px;
+}
+
+/* Grid for project-small  */
+.project-small {
+  display: grid;
+  grid-template-columns: 100%;
+
+  gap: 20px;
+}
+
+/* Attribute for container-project h1 */
+.container-project h1 {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+/* Grid for container-project-col */
+.container-project-col {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Attribute for img */
+.project-img img {
+  width: 100%;
+}
+
+/* Border-bottom of dt */
+.project-dt {
+  border-bottom: 1px solid #199cdb;
+}
+
+/* Attribute for a */
+.project-dt a {
+  border-radius: 20px;
+  padding: 2px 4px;
+  background-color: rgb(222, 255, 168);
+  text-decoration: none;
+}
+
+.project-dt a:hover {
+  background-color: rgb(251, 255, 190);
+  color: #77cef7;
+}
+
+/* Attribute for Icon */
+.personal-icon {
+  width: 100%;
+}
+
+/* Inline-block for Icon */
+.icon-inline-block {
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/* Attribute for year */
+.year {
+  padding: 2px 4px;
+  background-color: #199cdb;
+  border-radius: 20px;
+}
+
+/* Attribute collapse */
+table {
+  border-collapse: collapse;
+  border-top: 1px solid #199cdb;
+}
+
+/* border-bottom */
+tr {
+  border-bottom: 1px solid #199cdb;
+}
+
+/* text-align: left for 30% of th */
+th {
+  width: 30%;
+  text-align: left;
+}
+
+/* 70% of td */
+td {
+  width: 70%;
+}
+
+/* Footer */
+/* Attribute for Footere */
+.container-footer {
+  width: 100%;
+  height: 18vh;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12), 0 0 30px rgba(0, 0, 0, 0.24);
+
+  text-align: center;
+}
+
+/* Inline-block for Footer  */
+.footer-inline-block {
+  font-size: 16px;
+  display: inline-block;
+  color: #199cdb;
+
+  margin-top: 8vh;
+}
+
+/* border-radius for Icon */
+.border-footer-icon {
+  margin: 4px;
+  padding: 6px;
+  font-size: 12px;
+  color: white;
+  background-color: #199cdb;
+
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+}
+
+/* Remove underline */
+.container-footer a {
+  text-decoration: none;
+}

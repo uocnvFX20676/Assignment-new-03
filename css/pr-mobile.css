@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+  /* Main */
+  #main .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* flex colums for Goals */
+  #main .container .goals .goal-all .goal-contents {
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  #main .container .team .team-mem {
+    font-size: 12px;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* flex colums for Scope */
+  #main .container .scopes .scopes-col {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: left;
+    align-items: center;
+  }
+
+  /* flex colums for Timeline */
+  #main .container .timeline .timeline-date {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: left;
+    align-items: center;
+  }
+
+  #main .container .primary .primary-all .primary-contents {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+
+    margin: 10px auto;
+  }
+}
